@@ -1,7 +1,7 @@
 import { DashboardRoute, LogenRoute } from "./routes"
 
 const App = () => {
-  const token = true
+  const token = false
   return token ? <DashboardRoute/> : <LogenRoute/>
 }
 
