@@ -1,3 +1,4 @@
-import logoIcon from "../images/logoIcon.svg"
+import logoIcon from "./logoIcon.svg"
+import Loading from "../images/loading.png"
 
-export {logoIcon}
+export {logoIcon, Loading}
