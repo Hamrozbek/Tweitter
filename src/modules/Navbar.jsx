@@ -7,7 +7,7 @@ const Navbar = () => {
     const [activNav, setActivNav] = useState("/")
 
     return (
-        <div className="w-[283px] pt-[31px] pr-[15px]">
+        <div className="w-[253px] pt-[31px] pr-[15px]">
             <img className="mb-[49px]" src={logoIcon} alt="logo" width={40} height={33} />
             <nav className="flex flex-col gap-[32px]">
                 {routList.map(item =><NavItem setActivNav={setActivNav} activNav={activNav} item={item}/> )}

@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 .containers{
-    width: 1595px;
+    width: 1395px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 body{

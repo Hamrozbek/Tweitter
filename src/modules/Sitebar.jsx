@@ -1,7 +1,7 @@
 
 const Sitebar = () => {
   return (
-    <div className="w-[402px]">
+    <div className="w-[350px]">
       Sitebar
     </div>
   )
