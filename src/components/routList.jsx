@@ -8,7 +8,8 @@ export const routList = [
         path: PATH.main,
         title: "Home",
         element: <Home />,
-        icon: <HomeIcon/>,
+        icon: <HomeIcon />,
+        activeIcon: <HomeIcon active={true} />,
         children: []
     },
     {
@@ -16,7 +17,8 @@ export const routList = [
         path: PATH.explore,
         title: "Explore",
         element: <Explore />,
-        icon: <ExploreIcon/>,
+        icon: <ExploreIcon />,
+        activeIcon: <ExploreIcon active={true} />,
         children: []
     },
     {
@@ -24,7 +26,8 @@ export const routList = [
         path: PATH.notification,
         title: "Notification",
         element: <Notifications />,
-        icon: <NotificationIcon/>,
+        icon: <NotificationIcon />,
+        activeIcon: <NotificationIcon active={true} />,
         children: []
     },
     {
@@ -32,7 +35,8 @@ export const routList = [
         path: PATH.messages,
         title: "Messages",
         element: <Messages />,
-        icon: <MessagesIcon/>,
+        icon: <MessagesIcon />,
+        activeIcon: <MessagesIcon active={true} />,
         children: []
     },
     {
@@ -40,7 +44,8 @@ export const routList = [
         path: PATH.bookmarks,
         title: "Bookmarks",
         element: <Bookmarks />,
-        icon: <BookmarksIcon/>,
+        icon: <BookmarksIcon />,
+        activeIcon: <BookmarksIcon active={true} />,
         children: []
     },
     {
@@ -48,7 +53,8 @@ export const routList = [
         path: PATH.lists,
         title: "Lists",
         element: <Lists />,
-        icon: <ListIcon/>,
+        icon: <ListIcon />,
+        activeIcon: <ListIcon active={true} />,
         children: []
     },
     {
@@ -56,7 +62,8 @@ export const routList = [
         path: PATH.profile,
         title: "Profile",
         element: <Profile />,
-        icon: <ProfileIcon/>,
+        icon: <ProfileIcon />,
+        activeIcon: <ProfileIcon active={true} />,
         children: []
     },
     {
@@ -64,7 +71,8 @@ export const routList = [
         path: PATH.more,
         title: "More",
         element: <More />,
-        icon: <ModeIcon/>,
+        icon: <ModeIcon />,
+        activeIcon: <ModeIcon active={true} />,
         children: []
     }
 ]

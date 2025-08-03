@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+.containers{
+    width: 1595px;
+    margin: 0 auto;
+}
+
+body{
+    overflow: hidden;
+}
 
 .loading-img{
     animation-name: loading-img;
@@ -16,4 +24,8 @@
     100%{
         transform: scale(1.5) rotateY(360deg);
     }
+}
+
+.active{
+    font-weight: bold;
 }

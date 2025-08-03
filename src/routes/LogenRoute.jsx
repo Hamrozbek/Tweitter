@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import { PATH } from '../components'
-import Login from '../pages/Auth/Login'
+import {Login} from '../pages/'
 import { Suspense } from 'react'
 import PagesLoading from '../components/PagesLoading'
 
