@@ -1,14 +1,24 @@
 @import "tailwindcss";
 
 .containers{
-    width: 1395px;
+    max-width: 1360px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 body{
     overflow: hidden;
 }
+
+.hide-scrollbar {
+  scrollbar-width: none; 
+  -ms-overflow-style: none;  
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; 
+}
+
 
 .loading-img{
     animation-name: loading-img;
