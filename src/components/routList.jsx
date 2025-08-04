@@ -1,4 +1,4 @@
-import { BookmarksIcon, ExploreIcon, HomeIcon, ListIcon, MessagesIcon, ModeIcon, NotificationIcon, ProfileIcon } from "../assets/icons";
+import { BookmarksIcon, ExploreIcon, HomeIcon, ListIcon, MessagesIcon, MoreIcon, NotificationIcon, ProfileIcon } from "../assets/icons";
 import { Bookmarks, Explore, Home, Lists, Messages, More, Notifications, Profile } from "../pages";
 import { PATH } from "./path";
 
@@ -71,8 +71,8 @@ export const routList = [
         path: PATH.more,
         title: "More",
         element: <More />,
-        icon: <ModeIcon />,
-        activeIcon: <ModeIcon active={true} />,
+        icon: <MoreIcon />,
+        activeIcon: <MoreIcon active={true} />,
         children: []
     }
 ]
