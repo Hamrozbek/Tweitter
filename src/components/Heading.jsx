@@ -5,7 +5,7 @@ const Heading = ({ tag, title, extraClass }) => {
     } else if (tag == "h2") {
         return <h2 className={`${extraClass} text-[24px] text-[#000000] font-bold`} >{title}</h2>
     } else if (tag == "h3") {
-        return <h3 className={`${extraClass} text-[20px] text-[#000000] font-semibold`} >{title}</h3>
+        return <h3 className={`${extraClass} text-[18px] text-[#000000] font-semibold`} >{title}</h3>
     }
 }
 

@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { ChooseImgIcon, DateIcon, GifIcon, ModeIcon, SmailkIcon, StaticIcon } from "../../assets/icons"
-import { AvatarImg, kebab } from "../../assets/images"
+import { AvatarImg, Cloutex, Creativ, Designst, kebab } from "../../assets/images"
 import { Button } from "../../components"
 import Heading from "../../components/Heading"
 import Input from "../../components/Input"
@@ -13,7 +13,7 @@ const Home = () => {
   const [postList, setPostList] = useState(JSON.parse(localStorage.getItem("postList")) || [
     {
       id: 1,
-      img: AvatarImg,
+      img: Designst,
       username: "Designsta",
       email: "@inner · 25m",
       content: "Twitterdagi ayol-erkak qarama-qarshiliginglardan o'zinglar zerikmadinglarmi?",
@@ -26,7 +26,7 @@ const Home = () => {
     },
     {
       id: 2,
-      img: AvatarImg,
+      img: Cloutex,
       username: "cloutexhibition",
       email: "@RajLahoti · 22m",
       content: "YPIP dasturining bu yilgi sezoni ham o’z nihoyasiga yetmoqda. Mentorlik davomida talaba va yangi bitiruvchilarni o’sayotganini ko’rib hursand bo’ladi odam.",
@@ -39,7 +39,7 @@ const Home = () => {
     },
     {
       id: 3,
-      img: AvatarImg,
+      img: Creativ,
       username: "CreativePhoto",
       email: "@cloutexhibition · 1h",
       content: "Обетда..... Кечиринглар",
@@ -75,16 +75,16 @@ const Home = () => {
   localStorage.setItem("postList", JSON.stringify(postList))
   return (
     <div>
-      <div className="flex justify-between items-center p-5 border-b-[1px] border-[#D8D8D8]">
+      <div className="flex justify-between items-center p-4 border-b-[1px] border-[#D8D8D8]">
         <Heading tag={"h2"} title={"Home"} />
         <ModeIcon />
       </div>
-      <div className="flex relative gap-[15px] px-5 pb-5 border-b-[1px] border-[#D8D8D8]">
+      <div className="flex relative gap-[15px] px-4 pb-4 border-b-[1px] border-[#D8D8D8]">
         <img className="w-[60px] h-[60px]" src={AvatarImg} alt="avatar img" width={60} height={60} />
         <form onSubmit={handelCreatPost} autoComplete="off" className="w-[100%] pb-[28px]">
-          <Input name={"todo"} placeholder={"What’s happening"} extraClass={"!p-0 !mb-[32px] !pt-[11px] !w-[80%] !text-[#828282] font-semibold !text-[22px] !outline-none !border-none"} />
+          <Input name={"todo"} placeholder={"What’s happening"} extraClass={"!p-0 !mb-[32px] !pt-[11px] !w-[80%] font-semibold !text-[20px] !outline-none !border-none"} />
           <div className="flex items-center gap-[22px]">
-            <label>
+            <label className="cursor-pointer">
               <ChooseImgIcon />
               <input onChange={(e) => setChooseImg(URL.createObjectURL(e.target.files[0]))} className="hidden" type="file" />
             </label>
@@ -93,7 +93,7 @@ const Home = () => {
             <button type="button"><SmailkIcon /> </button>
             <button type="button"><DateIcon /> </button>
           </div>
-          <Button type={"submit"} extraClass={"!w-[108px] !absolute !bottom-[5px] !right-[18px]"}>Tweet</Button>
+          <Button type={"submit"} extraClass={"!w-[100px] !absolute !bottom-[5px] !right-[18px]"}>Tweet</Button>
         </form>
       </div>
       <div>

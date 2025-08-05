@@ -7,9 +7,9 @@ const Navbar = () => {
     const [activNav, setActivNav] = useState("/")
 
     return (
-        <div className="w-[253px] relative pt-[25px] pr-[15px]">
-            <img className="mb-[39px]" src={logoIcon} alt="logo" width={40} height={33} />
-            <nav className="flex flex-col gap-[22px]">
+        <div className="w-[253px] h-[100vh] overflow-y-auto relative hide-scrollbar py-[25px] pl-1 pr-[15px]">
+            <img className="mb-[49px]" src={logoIcon} alt="logo" width={40} height={33} />
+            <nav className="flex flex-col gap-[30px]">
                 {routList.map(item => <NavItem key={item.id} setActivNav={setActivNav} activNav={activNav} item={item} />)}
             </nav>
             <Button extraClass={"!mt-[30px]"} children={"Tweet"} />

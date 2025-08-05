@@ -12,7 +12,7 @@ const LogOut = () => {
     }
 
     return (
-        <div className='pt-[30px] w-[100%] flex items-center gap-[10px]'>
+        <div className='pt-[100px] w-[100%] flex items-center gap-[10px]'>
             <img src={AvatarImg} alt="avatarimg" width={60} height={60} />
             <div>
                 <strong>{cookies.token.email}</strong>

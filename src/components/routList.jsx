@@ -18,7 +18,7 @@ export const routList = [
         id: 2,
         path: PATH.explore,
         title: "Explore",
-        element: <Explore />,
+        element: <Suspense fallback={<PagesLoading isLoading={true}/>}><Explore /></Suspense>,
         icon: <ExploreIcon />,
         activeIcon: <ExploreIcon active={true} />,
         children: []
@@ -27,16 +27,16 @@ export const routList = [
         id: 3,
         path: PATH.notification,
         title: "Notification",
-        element: <Notifications />,
+        element: <Suspense fallback={<PagesLoading isLoading={true}/>}><Notifications /></Suspense>,
         icon: <NotificationIcon />,
         activeIcon: <NotificationIcon active={true} />,
         children: []
     },
     {
-        id: 4,
+        id:4,
         path: PATH.messages,
         title: "Messages",
-        element: <Messages />,
+        element: <Suspense fallback={<PagesLoading isLoading={true}/>}><Messages /></Suspense>,
         icon: <MessagesIcon />,
         activeIcon: <MessagesIcon active={true} />,
         children: []
@@ -45,7 +45,7 @@ export const routList = [
         id: 5,
         path: PATH.bookmarks,
         title: "Bookmarks",
-        element: <Bookmarks />,
+        element: <Suspense fallback={<PagesLoading isLoading={true}/>}> <Bookmarks /></Suspense>,
         icon: <BookmarksIcon />,
         activeIcon: <BookmarksIcon active={true} />,
         children: []
@@ -54,7 +54,7 @@ export const routList = [
         id: 6,
         path: PATH.lists,
         title: "Lists",
-        element: <Lists />,
+        element: <Suspense fallback={<PagesLoading isLoading={true}/>}><Lists /></Suspense>,
         icon: <ListIcon />,
         activeIcon: <ListIcon active={true} />,
         children: []
@@ -63,7 +63,7 @@ export const routList = [
         id: 7,
         path: PATH.profile,
         title: "Profile",
-        element: <Profile />,
+        element: <Suspense fallback={<PagesLoading isLoading={true}/>}><Profile /></Suspense>,
         icon: <ProfileIcon />,
         activeIcon: <ProfileIcon active={true} />,
         children: []
@@ -72,7 +72,7 @@ export const routList = [
         id: 8,
         path: PATH.more,
         title: "More",
-        element: <More />,
+        element: <Suspense fallback={<PagesLoading isLoading={true}/>}><More /></Suspense>,
         icon: <MoreIcon />,
         activeIcon: <MoreIcon active={true} />,
         children: []
