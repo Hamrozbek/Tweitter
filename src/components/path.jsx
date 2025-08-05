@@ -3,7 +3,7 @@ export const PATH = {
     explore:"/explore",
     notification:"/notification",
     messages:"/messages",
-    bookmarks:"/ bookmarks",
+    bookmarks:"/bookmarks",
     lists:"/lists",
     profile:"/profile",
     more:"/more"

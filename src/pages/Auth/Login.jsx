@@ -31,12 +31,8 @@ const Login = () => {
           </Button>
         </form>
         <div className="flex justify-between pt-[40px]">
-          <a href="">
             <Textp title={"Forgot password?"} />
-          </a>
-          <a href="">
             <Textp title={"Sign up to Twitter"} />
-          </a>
         </div>
       </div>
     </>
